@@ -6,6 +6,7 @@
 
 body {
     background-color: #222f3e;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
@@ -16,7 +17,6 @@ h1 {
 h1 {
     font-size: 2em;
     color: #8395a7;
-    font-family: monospace;
 }
 
 #main-wrapper {
@@ -24,7 +24,19 @@ h1 {
     margin: 0 auto;
 
     position: relative;
-    top: 150px;
+    top: 100px;
+}
+
+.navigation.link {
+    margin: 35px 0 35px 0;
+}
+
+.navigation.link a {
+    color: #ff6b6b;
+    margin: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
 .head-template {
@@ -53,13 +65,77 @@ footer {
     font-size: 12px;
     text-align: center;
     color: #8395a7;
-    margin-top: 26px;
+    margin-top: 15px;
+    padding-bottom: 15px;
 }
+
+/************************************************************************
+                                ABOUT
+************************************************************************/
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projects {
+    margin: 15px;
+    width: 300px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.projects h2 {
+    color: #c8d6e5;
+    margin: 0 0 30px 0;
+    text-decoration: underline;
+}
+
+.projects p {
+    color: #8395a7;;
+}
+
+.projects a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.activity-one,
+.activity-two {
+    margin: 15px;
+}
+
+.techs {
+    margin: 30px;
+    flex-grow: 2;
+}
+
+.techs i {
+    margin: 20px;
+    font-size: 2em;
+    color: #01a3a4;
+}
+
+.definition {
+    color: #c8d6e5;
+    line-height: 2em;
+    margin: 0 auto;
+    width: 59%;
+}
+
 
 /* HOVER */
 
-.social-site img:hover {
+.link a:hover {
     background: #ff6b6b;
+    color: #c8d6e5;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.social-site img:hover {
+    background: #ee5253;
     transition: all .3s ease-in-out;
 }
 
@@ -68,11 +144,13 @@ footer:hover {
     transition: all .3s ease-in-out;
 }
 
+
 /************************************************************************
     MEDIA QUERIES
 
     Thanks to: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
 ************************************************************************/
+
 /*
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -106,7 +184,6 @@ footer:hover {
     .head-template img {
         width: 60%;
     }
-
   }
 
   /*
@@ -118,6 +195,14 @@ footer:hover {
 
     .head-template img {
         width: 70%;
+    }
+
+    .definition {
+        font-size: 1em;
+    }
+
+    .techs i {
+        font-size: 1.50em;
     }
 
   }
@@ -141,6 +226,15 @@ footer:hover {
         width: 3.5%;
     }
 
+    .definition {
+        font-size: .75em;
+    }
+
+    .techs i {
+        font-size: 1.25em;
+    }
+
+
   }
 
   /*
@@ -161,6 +255,15 @@ footer:hover {
     h1 {
         font-size: 1.25em;
     }
+
+    .definition {
+        font-size: .75em;
+    }
+
+    .techs i {
+        font-size: 1.25em;
+    }
+
 
     footer {
         font-size: 10px;
