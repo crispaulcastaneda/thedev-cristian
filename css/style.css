@@ -136,6 +136,7 @@ footer {
 
 .social-site img:hover {
     background: #ee5253;
+    padding: 5px;
     transition: all .3s ease-in-out;
 }
 
