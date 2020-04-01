@@ -1,3 +1,5 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">');
+
 * {
     padding: 0;
     margin: 0;
@@ -24,7 +26,7 @@ h1 {
     margin: 0 auto;
 
     position: relative;
-    top: 100px;
+    top: 20px;
 }
 
 .navigation.link {
@@ -121,7 +123,7 @@ footer {
     color: #c8d6e5;
     line-height: 2em;
     margin: 0 auto;
-    width: 59%;
+    width: 64%;
 }
 
 
