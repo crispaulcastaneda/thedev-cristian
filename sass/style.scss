@@ -1,0 +1,79 @@
+/** Mixing of Fonts **/
+// Mulish => Primary
+// Playfair => Secondary
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;1,200&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap');
+
+$primaryFont: 'Mulish', sans-serif;
+$secondaryFont: 'Playfair Display', serif;
+$primaryClr: #fff;
+$secondaryClr: #111;
+$mixinClr: #ccc;
+$hrefClr: #d3d33c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primaryFont;
+}
+
+body {
+    background: linear-gradient(45deg, grey ,#ccc);
+    height: 100vh;
+}
+
+#container {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $secondaryClr url("../img/bg404-2-2.png") no-repeat fixed;
+    box-shadow: 0 15px 30px rgba(0,0,0.5);
+
+    .content {
+        max-width: 600px;
+        text-align: center;
+
+        h2 {
+            font-size: 18vw;
+            color: $primaryClr;
+            line-height: 1em;
+
+            span {
+                color: $hrefClr;
+            }
+        }
+
+        h4 {
+            position: relative;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: $mixinClr;
+            font-weight: 300;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        p {
+            color: $primaryClr;
+            font-size: 1.2em;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 25px;
+            background: #815162;
+            color: $hrefClr;
+            text-decoration: none;
+            margin-top: 25px;
+            border-radius: 25px;
+            border-bottom: 4px solid #573742;
+        }
+    }
+}

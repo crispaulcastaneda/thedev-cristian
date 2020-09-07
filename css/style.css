@@ -1,273 +1,65 @@
+/** Mixing of Fonts **/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;1,200&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
 }
 
 body {
-    background-color: #222f3e;
-    font-family: 'Roboto Condensed', sans-serif;
+  background: linear-gradient(45deg, grey, #ccc);
+  height: 100vh;
 }
 
-h1 {
-    font-weight: 200;
-    margin: 0.4em 0;
+#container {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111 url("../img/bg404-2-2.png") no-repeat fixed;
+  box-shadow: 0 15px 30px #000001;
+}
+#container .content {
+  max-width: 600px;
+  text-align: center;
+}
+#container .content h2 {
+  font-size: 18vw;
+  color: #fff;
+  line-height: 1em;
+}
+#container .content h2 span {
+  color: #d3d33c;
+}
+#container .content h4 {
+  position: relative;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ccc;
+  font-weight: 300;
+  padding: 10px 20px;
+  display: inline-block;
+}
+#container .content p {
+  color: #fff;
+  font-size: 1.2em;
+}
+#container .content a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  background: #815162;
+  color: #d3d33c;
+  text-decoration: none;
+  margin-top: 25px;
+  border-radius: 25px;
+  border-bottom: 4px solid #573742;
 }
 
-h1 {
-    font-size: 2em;
-    color: #8395a7;
-}
-
-#main-wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-
-    position: relative;
-    top: 20px;
-}
-
-.navigation.link {
-    margin: 35px 0 35px 0;
-}
-
-.navigation.link a {
-    color: #ff6b6b;
-    margin: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.head-template {
-    text-align: center;
-}
-
-.head-template img {
-    width: 50%;
-}
-
-.social-site {
-    text-align: center;
-}
-
-.social-site a {
-    text-decoration: none;
-    margin: 15px;
-}
-
-.social-site img {
-    width: 2.5%;
-    margin-top: 20px;
-}
-
-footer {
-    font-size: 12px;
-    text-align: center;
-    color: #8395a7;
-    margin-top: 15px;
-    padding-bottom: 15px;
-}
-
-/************************************************************************
-                                ABOUT
-************************************************************************/
-
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.projects {
-    margin: 15px;
-    width: 300px;
-    text-align: center;
-    flex-grow: 1;
-}
-
-.projects h2 {
-    color: #c8d6e5;
-    margin: 0 0 30px 0;
-    text-decoration: underline;
-}
-
-.projects p {
-    color: #8395a7;;
-}
-
-.projects a {
-    color: #ff6b6b;
-    text-decoration: none;
-}
-
-.activity-one,
-.activity-two {
-    margin: 15px;
-}
-
-.techs {
-    margin: 30px;
-    flex-grow: 2;
-}
-
-.techs i {
-    margin: 20px;
-    font-size: 2em;
-    color: #01a3a4;
-}
-
-.definition {
-    color: #c8d6e5;
-    line-height: 2em;
-    margin: 0 auto;
-    width: 64%;
-}
-
-
-/* HOVER */
-
-.link a:hover {
-    background: #ff6b6b;
-    color: #c8d6e5;
-    padding: 5px;
-    transition: all .3s ease-in-out;
-}
-
-.social-site img:hover {
-    background: #ee5253;
-    padding: 5px;
-    transition: all .3s ease-in-out;
-}
-
-footer:hover {
-    color: #ff6b6b;
-    transition: all .3s ease-in-out;
-}
-
-
-/************************************************************************
-    MEDIA QUERIES
-
-    Thanks to: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
-************************************************************************/
-
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-
-
-  }
-
-  /*
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-
-  @media (min-width: 1025px) and (max-width: 1280px) {
-
-    .head-template img {
-        width: 50%;
-    }
-
-  }
-
-  /*
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-
-    .head-template img {
-        width: 60%;
-    }
-  }
-
-  /*
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-    .head-template img {
-        width: 70%;
-    }
-
-    .definition {
-        font-size: 1em;
-    }
-
-    .techs i {
-        font-size: 1.50em;
-    }
-
-  }
-
-  /*
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-
-  @media (min-width: 481px) and (max-width: 767px) {
-
-    .head-template img {
-        width: 70%;
-    }
-
-    h1 {
-        font-size: 1.25em;
-    }
-
-    .social-site img {
-        width: 3.5%;
-    }
-
-    .definition {
-        font-size: .75em;
-    }
-
-    .techs i {
-        font-size: 1.25em;
-    }
-
-
-  }
-
-  /*
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-
-  @media (min-width: 320px) and (max-width: 480px) {
-
-    .head-template img {
-        width: 90%;
-    }
-
-    .social-site img {
-        width: 5%;
-    }
-
-    h1 {
-        font-size: 1.25em;
-    }
-
-    .definition {
-        font-size: .75em;
-    }
-
-    .techs i {
-        font-size: 1.25em;
-    }
-
-
-    footer {
-        font-size: 10px;
-    }
-
-  }
+/*# sourceMappingURL=style.css.map */
