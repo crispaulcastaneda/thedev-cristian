@@ -1,0 +1,23 @@
+{
+  "name": "thedev-cristian",
+  "version": "1.0.3",
+  "description": "personal-website",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello-world"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crispaulcastaneda/thedev-cristian.git"
+  },
+  "keywords": [
+    "personal-website",
+    "thedevcristian"
+  ],
+  "author": "Cristian Paul Castaneda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crispaulcastaneda/thedev-cristian/issues"
+  },
+  "homepage": "https://github.com/crispaulcastaneda/thedev-cristian#readme"
+}
