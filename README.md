@@ -1,13 +1,20 @@
 # thedev-cristian
-Built portfolio from scratch for my projects and activities
-Lot of my portfolio website and this will be my primary.
+Updating portfolio into a creative and simple to connect with people the way I learned the technologies.
 
 ## Markups and Technology
 ```
 HTML
-CSS
-JavaScript
+CSS + SASS
+JavaScript > bundle.js
+
+with NPM and Browserify
 ```
+
+### Documentation
+
+To view the code and check how it works.
+Run VSCode > Run Terminal > Install npm (npm install)
+To run the output.
 
 ### Thanks to
 

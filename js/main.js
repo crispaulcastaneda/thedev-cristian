@@ -1,3 +1,7 @@
+var _ = require('lodash');
+console.log(_);
+
+
 const divContainer = document.getElementById('container');
 this.onmousemove = (e) => {
     const x = - e.clientX/5,
