@@ -1,24 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cristian Paul Castañeda | Developer</title>
+<html lnag="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
 
-  <link rel = "icon" type = "image/png" href = "img/CristianPaul2.jpg">
+    <!-- Konpa Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div id="container">
-      <div class="content">
-        <h2>4<span>0</span>4</h2>
-        <h4>Building Portfolio</h4>
-        <p>The page you were looking is about to update by the owner.</p>
-        <a href="https://github.com/crispaulcastaneda" target="_blank">Visit my GitHub</a>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cristian Paul Castañeda | Developer</title>
+  </head>
+  <body>
+    <section class="container navbar">
+      <header>
+        <div class="logo">
+          <img src="img/amour.png" alt="thedevcristian">
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">My Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section class="">
+
+    <section class="container main-info">
+      <div class="text">
+        <h1>
+          <span>H</span>
+          <span class="m-left">i</span>
+          <span class="m-left">,</span>
+          <br>
+
+          <span>I</span>
+          <span class="m-left">'</span>
+          <span class="m-left">m</span>
+          <span class="name">P</span>
+          <span class="m-left name">a</span>
+          <span class="m-left name">u</span>
+          <span class="m-left name">l</span>
+          <span class="m-left">,</span>
+          <br>
+
+          <span>D</span>
+          <span class="m-left">e</span>
+          <span class="m-left">v</span>
+          <span class="m-left">e</span>
+          <span class="m-left">l</span>
+          <span class="m-left">o</span>
+          <span class="m-left">p</span>
+          <span class="m-left">e</span>
+          <span class="m-left">r</span>
+        </h1>
+
+        <p>JavaScript / React / Node.js</p>
+        <a href="#about">Cristian Paul ></a>
       </div>
-    </div>
 
-    <script type="text/javascript" src="bundle.js"></script>
-</body>
+      <div class="profile-img">
+        <img src="img/Paul.jpg" alt="Cristian Image">
+      </div>
+    </section>
+
+    <section class="container" id="about">
+      <div class="about-me-info">
+        <h1>About</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit esse repellat eius quis saepe fugit!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit esse repellat eius quis saepe fugit!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit esse repellat eius quis saepe fugit!</p>
+      </div>
+      <!-- Image -->
+      <img src="img/bg404-2-2.png" alt="404-Robot">
+    </section>
+
+    <section class="container-skills" id="skills">
+      <h1>Skills</h1>
+      <p class="skills-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur ab veritatis quis nobis maxime!</p>
+      <div class="tag-html">
+        <i class="devicon-html5-plain-wordmark colored"></i>
+      </div>
+
+      <div class="tag-css">
+        <i class="devicon-css3-plain-wordmark colored"></i>
+      </div>
+
+      <div class="tag-sass">
+        <i class="devicon-sass-original colored"></i>
+      </div>
+
+      <div class="tag-js">
+        <i class="devicon-javascript-plain colored"></i>
+      </div>
+
+      <div class="tag-react">
+        <i class="devicon-react-original colored"></i>
+      </div>
+
+      <div class="tag-git">
+        <i class="devicon-git-plain colored"></i>
+      </div>
+
+      <div class="tag-github">
+        <i class="devicon-github-plain colored"></i>
+      </div>
+    </section>
+
+    <section class="container-work" id="work">
+      <div class="work-category">
+        <button id="landing-page" class="active">Landing Page</button>
+        <button id="animation">Web Animation</button>
+        <button id="projects">React Projects</button>
+      </div>
+
+      <div class="category-landing showCategory">
+        <a href="#"><img src="img/digital-once.jpg"></a>
+        <a href="#"><img src="img/marichu.jpg"></a>
+      </div>
+
+      <div class="category-landing hideCategory">
+        <a href="#"><img src="img/digital-once.jpg"></a>
+        <a href="#"><img src="img/marichu.jpg"></a>
+      </div>
+
+      <div class="category-landing hideCategory">
+        <a href="#"><img src="img/digital-once.jpg"></a>
+        <a href="#"><img src="img/marichu.jpg"></a>
+      </div>
+    </section>
+
+    <section class="container contact" id="contact">
+      <h1>Contact</h1>
+      <form>
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="email" placeholder="youremail@domain.com" disabled>
+        <textarea name="message" cols="30" rows="10" placeholder="Your message..."></textarea>
+        <input type="submit">
+      </form>
+    </section>
+
+    <footer>
+      <hr>
+      <p>&copy; 2020 | {thedevcristian} | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+    <script src="js/TimelineLite.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

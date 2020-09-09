@@ -7,59 +7,38 @@
   font-family: "Mulish", sans-serif;
 }
 
-body {
-  background: linear-gradient(45deg, grey, #ccc);
-  height: 100vh;
+html {
+  scroll-behavior: smooth;
 }
 
-#container {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  right: 10%;
-  bottom: 10%;
-  border-radius: 10px;
+.container {
+  padding: 0 100px 0 100px;
+}
+
+nav ul,
+.main-info,
+.work-category {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #111 url("../img/bg404-2-2.png") no-repeat fixed;
-  box-shadow: 0 15px 30px #000001;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-#container .content {
-  max-width: 600px;
-  text-align: center;
+
+body {
+  background: #000000;
 }
-#container .content h2 {
-  font-size: 18vw;
-  color: #fff;
-  line-height: 1em;
+
+h1, a, .text p, .skills h1, .work h1, .contact h1 {
+  color: #707070;
 }
-#container .content h2 span {
-  color: #d3d33c;
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
 }
-#container .content h4 {
-  position: relative;
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  color: #ccc;
-  font-weight: 300;
-  padding: 10px 20px;
-  display: inline-block;
-}
-#container .content p {
-  color: #fff;
-  font-size: 1.2em;
-}
-#container .content a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 25px;
-  background: #815162;
-  color: #d3d33c;
-  text-decoration: none;
-  margin-top: 25px;
-  border-radius: 25px;
-  border-bottom: 4px solid #573742;
+header .navbar {
+  background-color: #181818;
 }
 
 /*# sourceMappingURL=style.css.map */

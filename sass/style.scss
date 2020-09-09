@@ -17,63 +17,37 @@ $hrefClr: #d3d33c;
     font-family: $primaryFont;
 }
 
-body {
-    background: linear-gradient(45deg, grey ,#ccc);
-    height: 100vh;
+html {
+    scroll-behavior: smooth;
 }
 
-#container {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-    border-radius: 10px;
+.container {
+    padding: 0 100px 0 100px;
+}
+
+nav ul,
+.main-info,
+.work-category {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $secondaryClr url("../img/bg404-2-2.png") no-repeat fixed;
-    box-shadow: 0 15px 30px rgba(0,0,0.5);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-    .content {
-        max-width: 600px;
-        text-align: center;
+body {
+    background: #000000;
+}
 
-        h2 {
-            font-size: 18vw;
-            color: $primaryClr;
-            line-height: 1em;
+h1, a, .text p, .skills h1, .work h1, .contact h1 {
+    color: #707070;
+}
 
-            span {
-                color: $hrefClr;
-            }
-        }
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
 
-        h4 {
-            position: relative;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            color: $mixinClr;
-            font-weight: 300;
-            padding: 10px 20px;
-            display: inline-block;
-        }
-
-        p {
-            color: $primaryClr;
-            font-size: 1.2em;
-        }
-
-        a {
-            position: relative;
-            display: inline-block;
-            padding: 10px 25px;
-            background: #815162;
-            color: $hrefClr;
-            text-decoration: none;
-            margin-top: 25px;
-            border-radius: 25px;
-            border-bottom: 4px solid #573742;
-        }
+    .navbar {
+        background-color: #181818;
     }
 }
