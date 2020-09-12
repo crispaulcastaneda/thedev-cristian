@@ -1,22 +1,19 @@
-# thedev-cristian
-Updating portfolio into a creative and simple to connect with people the way I learned the technologies.
+# About the Portfolio
+{thedevcristian} is a personal portfolio where I can share my projects to the internet and create ideas.
+It includes my past and recent projects for my future reference.
 
 ## Markups and Technology
 ```
-HTML
-CSS + SASS
-JavaScript > bundle.js
 
-with NPM and Browserify
+HTML / CSS
+JavaScript + Bundle with Lodash
+
 ```
 
 ### Documentation
 
-To view the code and check how it works.
-Run VSCode > Run Terminal > Install npm (npm install)
-To run the output.
-
 ### Thanks to
 
-Styling using flexbox. Thanks to: [Internetting is Hard](https://www.internetingishard.com/)
-Responsive Website. Thanks to: [Gokul Krishh]( https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
+Responsive Website: [Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
+Lodash [Lodash](https://lodash.com/)
+[Internetting is Hard](https://www.internetingishard.com/)
