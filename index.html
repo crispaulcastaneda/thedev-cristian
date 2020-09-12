@@ -8,6 +8,9 @@
     <!-- Icon -->
     <link rel="icon" href="img/CristianPaul2.jpg" type="image/icon type">
 
+    <!-- Konpa Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
     <!-- Box Icons -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
@@ -28,11 +31,11 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
 
@@ -47,7 +50,7 @@
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">Hello, <br>I am <span class="home__title-color">Cristian Paul</span><br> Web Developer</h1>
-                <a href="#" class="button">Contact</a>
+                <a href="#" class="button">Contact <i class='bx bx-chevrons-right'></i></a>
             </div>
 
             <div class="home__social">
@@ -65,9 +68,9 @@
         <section class="about section" id="about">
             <h2 class="section-title">&lt;/About&gt;</h2>
 
-            <div class="about__container bg-grid">
+            <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="img/CristianPaul2.jpg" alt="cristianpaul">
+                    <img src="img/paul.png" alt="cristianpaul">
                 </div>
 
                 <div>
@@ -77,7 +80,84 @@
             </div>
         </section>
 
+        <!-- Skill section -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">&lt;/Skills&gt;</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Web Development Skills</h2>
+                    <p class="skills__subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <div class="skills__techstack">
+                        <div class="skills__names">
+                            <span class="skills_tech"><i class="devicon-html5-plain colored"></i></span>
+                            <span class="skills_tech"><i class="devicon-css3-plain colored"></i></span>
+                            <span class="skills_tech"><i class="devicon-javascript-plain colored"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__techstack">
+                        <div class="skills__names">
+                            <span class="skills_tech"><i class="devicon-nodejs-plain colored"></i></i></span>
+                            <span class="skills_tech"><i class="devicon-react-original colored"></i></span>
+                            <span class="skills_tech"><i class="devicon-sass-original colored"></i></span>
+                            <span class="skills_tech"><i class="devicon-bootstrap-plain colored"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__img">
+                    <img src="img/bracket.png" alt="bracket">
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+
+        <section class="work section" id="work">
+            <h2 class="section-title">&lt;/Work&gt;</h2>
+
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                    <img src="img/digital-once.jpg" alt="Digital Once">
+                </div>
+                <div class="work__img">
+                    <img src="img/marichu.jpg" alt="Marichu">
+                </div>
+                <div class="work__img">
+                    <img src="img/bg-gen.jpg" alt="BG Generator">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">&lt;/Contact&gt;</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="email" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                    <input type="button" value="Submit" class="contact__btn button">
+                </form>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__title">{thedevcristian}</p>
+
+        <div class="footer__soc">
+            <a href="#" class="home__social-icon"><i class='bx bxl-linkedin-square to-foot'></i></a>
+            <a href="#" class="home__social-icon"><i class='bx bxl-github to-foot'></i></a>
+            <a href="#" class="home__social-icon"><i class='bx bxl-stack-overflow to-foot'></i></a>
+        </div>
+
+        <p>&#169; 2020 Copyright, All right reserved</p>
+    </footer>
 
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>

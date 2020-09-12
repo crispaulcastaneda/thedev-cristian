@@ -251,6 +251,10 @@ img {
     color: var(--headers-clr)
 }
 
+.bx-chevrons-right {
+    font-size: .8rem;
+}
+
 .home__social-icon:hover {
     color: var(--text-clr);
 }
@@ -299,3 +303,233 @@ img {
 }
 
 /* Skill Section */
+.skills__container {
+    row-gap: 2rem;
+    text-align: center;
+}
+
+.skills__subtitle {
+    margin-bottom: var(--margin-2);
+}
+
+.skills__text {
+    margin-bottom: var(--margin-4);
+}
+
+.skills__techstack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-lt);
+    padding: .5rem 1rem;
+    margin-bottom: var(--margin-4);
+    border-radius: .5rem;
+}
+
+.skills_tech {
+    font-size: 2rem;
+    margin-right: var(--margin-2);
+    color: var(--text-clr);
+}
+
+.skills__names {
+    display: flex;
+    align-items: center;
+}
+
+.skills__img {
+    margin: 0 auto;
+}
+
+/* Work Section */
+.work {
+    text-align: center;
+}
+
+.work__container {
+    row-gap: 2rem;
+}
+
+.work__img {
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.work__img img {
+    transition: 1s;
+    cursor: pointer;
+}
+
+.work__img img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact__input {
+    width: 100%;
+    font-size: var(--normal-custom-sz);
+    font-weight: var(--font-lt);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid var(--background-clr);
+    outline: none;
+    margin-bottom: var(--margin-4);
+}
+
+.contact__btn {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: var(--normal-custom-sz);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--text-clr);
+    color: var(--background-clr);
+    text-align: center;
+    font-weight: var(--font-lt);
+    padding: 2rem 0;
+}
+
+.footer__title {
+    font-size: 2rem;
+    margin-bottom: var(--margin-4);
+}
+
+.footer__social {
+    margin-bottom: var(--margin-4);
+}
+
+.footer__icon {
+    font-size: 1.5rem;
+    margin: 0 var(--margin-2);
+}
+
+.to-foot {
+    color: var(--background-clr);
+}
+
+.bxl-linkedin-square:hover {
+    color: #0E76A8;
+}
+
+.bxl-github:hover {
+    color: #211F1F;
+}
+
+.bxl-stack-overflow:hover {
+    color: #F48024;
+}
+
+
+/* Breakpoints Media Queries */
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .section-title {
+        margin-bottom: var(--margin-6);
+    }
+
+    .section-title::after {
+        width: 80px;
+        top: 3rem;
+    }
+
+    .nav {
+        height: calc(var(--header-ht) + 1rem);
+    }
+
+    .nav__list {
+        display: flex;
+        padding-top: 0;
+    }
+
+    .nav__item {
+        margin-left: var(--margin-6);
+        margin-bottom: 0;
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__link {
+        color: var(--link-clr);
+    }
+
+    .home {
+        height: 100vh;
+    }
+
+    .home__data {
+        align-self: flex-end;
+    }
+
+    .home__social {
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+
+    .home__social-icon {
+        margin-bottom: 0;
+        margin-right: var(--margin-4);
+    }
+
+    .home__img {
+        width: 457px;
+        bottom: 15%;
+    }
+
+    .about__container, .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: initial;
+    }
+
+    .skills__subtitle {
+        text-align: center;
+    }
+
+    .about__img img {
+        width: 300px;
+    }
+
+    .work__container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .contact__form {
+        width: 360px;
+    }
+
+    .contact__container {
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home__img {
+        right: 10%;
+    }
+}
