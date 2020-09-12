@@ -8,6 +8,9 @@
     <!-- Icon -->
     <link rel="icon" href="img/CristianPaul2.jpg" type="image/icon type">
 
+    <!-- CDNJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
     <!-- Konpa Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
 
@@ -21,12 +24,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <div id="top"></div>
     <!-- Header Section -->
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo"><img src="img/amour.png" class="thedevlogo" alt="{thedevcristian}"></a>
+                <a href="#top" class="nav__logo"><img src="img/amour.png" class="thedevlogo" alt="{thedevcristian}"></a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -49,14 +52,14 @@
         <!-- Primary Section -->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hello, <br>I am <span class="home__title-color">Cristian Paul</span><br> Web Developer</h1>
-                <a href="#" class="button">Contact <i class='bx bx-chevrons-right'></i></a>
+                <h1 class="home__title">Hello, <br>I am <span class="home__title-color">Cristian Paul</span><br> <span class="little__me">Frontend Developer</span></h1>
+                <a href="#contact" class="button">Contact <i class='bx bx-chevrons-right'></i></a>
             </div>
 
             <div class="home__social">
-                <a href="#" class="home__social-icon"><i class='bx bxl-linkedin-square' ></i></a>
-                <a href="#" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                <a href="#" class="home__social-icon"><i class='bx bxl-stack-overflow' ></i></a>
+                <a href="https://linkedin.com/in/cristianpaul" class="home__social-icon"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://github.com/crispaulcastaneda" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://stackoverflow.com/users/9783217/paul" class="home__social-icon"><i class='bx bxl-stack-overflow' ></i></a>
             </div>
 
             <div class="home__img">
@@ -75,7 +78,7 @@
 
                 <div>
                     <h2 class="about__subtitle">I am Cristian Paul Castañeda</h2>
-                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptas fugit cumque eos! Facilis, eius.</p>
+                    <p class="about__text">A developer based from Philippines, learning with JavaScript projects and creating responsive web app using React.js</p>
                 </div>
             </div>
         </section>
@@ -86,8 +89,8 @@
 
             <div class="skills__container bd-grid">
                 <div>
-                    <h2 class="skills__subtitle">Web Development Skills</h2>
-                    <p class="skills__subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+                    <h2 class="skills__subtitle">WEB DEVELOPMENT</h2>
+                    <p class="skills__subtitle">Technology Stack:</p>
 
                     <div class="skills__techstack">
                         <div class="skills__names">
@@ -99,7 +102,8 @@
 
                     <div class="skills__techstack">
                         <div class="skills__names">
-                            <span class="skills_tech"><i class="devicon-nodejs-plain colored"></i></i></span>
+                            <span class="skills_tech"><i class="devicon-nodejs-plain colored"></i></span>
+                            <span class="skills_tech"><i class="devicon-npm-original-wordmark colored"></i></span>
                             <span class="skills_tech"><i class="devicon-react-original colored"></i></span>
                             <span class="skills_tech"><i class="devicon-sass-original colored"></i></span>
                             <span class="skills_tech"><i class="devicon-bootstrap-plain colored"></i></span>
@@ -119,13 +123,13 @@
 
             <div class="work__container bd-grid">
                 <div class="work__img">
-                    <img src="img/digital-once.jpg" alt="Digital Once">
+                    <a href="https://www.digitalonceph.cf/" target="_blank"><img src="img/digital-once.jpg" alt="Digital Once"></a>
                 </div>
                 <div class="work__img">
-                    <img src="img/marichu.jpg" alt="Marichu">
+                    <a href="https://www.marigalleria.ml/" target="_blank"><img src="img/marichu.jpg" alt="Marichu"></a>
                 </div>
                 <div class="work__img">
-                    <img src="img/bg-gen.jpg" alt="BG Generator">
+                    <a href="https://crispaulcastaneda.github.io/bg-generator/" target="_blank"><img src="img/bg-gen.jpg" alt="BG Generator"></a>
                 </div>
             </div>
         </section>
@@ -151,9 +155,10 @@
         <p class="footer__title">{thedevcristian}</p>
 
         <div class="footer__soc">
-            <a href="#" class="home__social-icon"><i class='bx bxl-linkedin-square to-foot'></i></a>
-            <a href="#" class="home__social-icon"><i class='bx bxl-github to-foot'></i></a>
-            <a href="#" class="home__social-icon"><i class='bx bxl-stack-overflow to-foot'></i></a>
+            <a href="https://linkedin.com/in/cristianpaul" class="home__social-icon"><i class='bx bxl-linkedin-square to-foot'></i></a>
+            <a href="https://github.com/crispaulcastaneda" class="home__social-icon"><i class='bx bxl-github to-foot'></i></a>
+            <a href="https://stackoverflow.com/users/9783217/paul" class="home__social-icon"><i class='bx bxl-stack-overflow to-foot'></i></a>
+            <a href="https://dev.to/thedevcristian"><i class="fab fa-dev" title="thedevcristian's DEV Profile"></i></a>
         </div>
 
         <p>&#169; 2020 Copyright, All right reserved</p>
