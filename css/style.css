@@ -377,7 +377,6 @@ img {
 
 /* Contact Section */
 .contact__input {
-    color: var(--headers-clr);
     text-align: center;
 }
 
@@ -386,7 +385,7 @@ iframe {
 }
 
 .contact-link {
-    color: #ddd;
+    color: var(--headers-clr);
     margin: 10px;
     transition: .5s all ease-in-out;
 }
@@ -394,6 +393,10 @@ iframe {
 .contact-link:hover {
     color: #bfbbbb;
     transition: .5s all ease-in-out;
+}
+
+.lt-color {
+    color: #bfbbbb;
 }
 
 iframe {
@@ -548,6 +551,7 @@ iframe {
 
     iframe {
         margin: 0 auto;
+        width: 350px;
     }
 
     .contact__container {
