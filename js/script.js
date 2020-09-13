@@ -5,7 +5,7 @@ const showMenu = (toggleId, navId) => {
     nav = document.getElementById(navId);
 
     if (toggle && nav) {
-        toggle.addEventListener('click', ()=> {
+        toggle.addEventListener('click', () => {
             nav.classList.toggle('show');
         })
     }
@@ -32,7 +32,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
-    durationg: 2000,
+    duration: 2000,
     reset: true
 })
 
