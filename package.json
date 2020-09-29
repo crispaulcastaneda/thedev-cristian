@@ -1,18 +1,18 @@
 {
-  "name": "thedev-cristian",
+  "name": "the-dev-cristian",
   "version": "1.0.3",
-  "description": "personal-website",
-  "main": "js/main.js",
+  "description": "personal-portfolio",
+  "main": "index.js",
   "scripts": {
-    "build": "browserify js/main.js > bundle.js && live-server"
+    "test": "test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/crispaulcastaneda/thedev-cristian.git"
   },
   "keywords": [
-    "personal-website",
-    "thedevcristian"
+    "portfolio",
+    "website"
   ],
   "author": "Cristian Paul Castaneda",
   "license": "MIT",
