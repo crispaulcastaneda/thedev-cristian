@@ -10,7 +10,7 @@ Personal project with github API
 
 ### Thanks to
 
-Responsive Website: [Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
+Media Queries [Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
 
 Lodash [Lodash](https://lodash.com/)
 
