@@ -14,4 +14,4 @@ Responsive Website: [Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1e
 
 Lodash [Lodash](https://lodash.com/)
 
-Repo-Card [Repo-Card](https://github.com/Tarptaeya/repo-card)
+Tarptaeya [Repo-Card](https://github.com/Tarptaeya/repo-card)
