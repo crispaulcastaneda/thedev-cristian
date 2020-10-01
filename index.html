@@ -8,8 +8,6 @@
     <!-- Icon -->
     <link rel="icon" href="img/CPC.png" type="image/icon type">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"/>
-
     <!-- repo-card -->
     <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
 
@@ -18,42 +16,45 @@
 </head>
 <body>
 
-    <div class="container">
-        <section id="header" class="d-flex justify-content-between">
-            <div class="lft p-2">
-                <h1>&#123; Hello &#125;</h1>
-                <h2>I'm Cristian Paul Castañeda</h2>
+    <div class="central">
+        <section id="header" class="flex">
+            <div class="lft">
+                <h1>I'm Cristian Paul Castañeda</h1>
+                <h2 class="greet">👨‍💻 <span class='wow'> </span></h2>
                 <p>
                         A Software Developer, based from Taguig, Philippines. <br>
                         I used current tools such as <span class="react">React</span>, <span class="redux">Redux</span>, <span class="node">Node</span>, and <span class="libraries">libraries</span> that will help to build websites.
                 </p>
 
                 <p>Need project to do?</p>
-                <p>We can talk about it, email me @ <a class="email" href="mailto:cristianpaul_c@yahoo.com">cristianpaul_c@yahoo.com</a></p>
+                <p class="sm-mble">We can talk about it, email me <a class="email" href="mailto:cristianpaul_c@yahoo.com">@cristianpaul_c@yahoo.com</a></p>
             </div>
 
-            <div class="rt p-2 align-self-center ">
+            <div class="rt">
                 <img class="img-robo" src="img/robo.png" alt="Robo">
             </div>
         </section>
 
         <section id="gh-repo">
             <!-- for Repo card -->
-            <div class="d-flex justify-content-between">
-                <div class="repo-card p-2" data-repo="crispaulcastaneda/react-robo"></div>
-                <div class="repo-card p-2" data-repo="crispaulcastaneda/marichu-galleria"></div>
+            <div class="flex-col-one">
+                <div class="repo-card" data-repo="crispaulcastaneda/react-robo"></div>
+                <div class="repo-card" data-repo="crispaulcastaneda/marichu-galleria"></div>
             </div>
-            <div class="d-flex justify-content-between">
-                <div class="repo-card p-2" data-repo="crispaulcastaneda/digital-once"></div>
-                <div class="repo-card p-2" data-repo="crispaulcastaneda/bg-generator"></div>
+            <div class="flex-col-two">
+                <div class="repo-card" data-repo="crispaulcastaneda/digital-once"></div>
+                <div class="repo-card" data-repo="crispaulcastaneda/bg-generator"></div>
             </div>
-            <p class="text-center more-on">
-                <a href="https://github.com/crispaulcastaneda">More on GitHub</a>
-            </p>
         </section>
 
+        <div class="center-me-pls">
+            <p class="more-on">
+                <a href="https://github.com/crispaulcastaneda">More on GitHub</a>
+            </p>
+        </div>
+
         <section id="other-contact">
-            <div class="professional-dev text-center">
+            <div class="professional-dev">
                 <a href="https://www.github.com/crispaulcastaneda" target="_Blank">
                     <img src="https://img.icons8.com/fluent/20/github.png"/>
                 </a>
@@ -64,15 +65,12 @@
                     <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Cristian Paul Castañeda's DEV Profile" width="20">
                   </a>
             </div>
-            <div class="footer text-center">
-                crispaulcastaneda | All Rights Reserved, 2020
+            <div class="footer">
+                &copy; crispaulcastaneda | All Rights Reserved, 2020
             </div>
         </section>
     </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="js/main.js"></script>
 </body>
 </html>

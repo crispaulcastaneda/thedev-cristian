@@ -6,7 +6,47 @@ body {
     color: #CAD3C8;
 }
 
-/* DEFAULT */
+h1 {
+    font-size: 2em;
+}
+
+.greet {
+    font-size: 1em;
+    font-family: monospace;
+}
+
+p {
+    line-height: 2em;
+}
+
+.wow {
+    height: 50vh;
+}
+
+/* CENTRAL */
+.central {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* SECTIONS */
+#header {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #111; */
+    padding: 8px;
+}
+
+.rt {
+    align-self: center;
+}
+
+.img-robo {
+    width: 200px;
+}
+
+/* ANCHOR and HOVERS */
 a {
     text-decoration: none;
     color: #111;
@@ -54,7 +94,12 @@ a:hover {
     color: #01a3a4;
 }
 
+.center-me-pls {
+    text-align: center;
+}
+
 .more-on a {
+    text-align: center;
     font-size: .7rem;
     margin: 20px;
     margin-bottom: 30px;
@@ -68,12 +113,20 @@ a:hover {
     color: #01a3a4;
 }
 
-.repo-card {
-    width: 900px;
+/* REPOSITORY */
+#gh-repo {
+    display: flex;
+    justify-content: space-around;
 }
 
-.img-robo {
-    width: 200px;
+.repo-card {
+    width: 450px;
+    margin: 10px;
+}
+
+/* CONTACT */
+#other-contact {
+    text-align: center;
 }
 
 /* Footer */
@@ -84,4 +137,112 @@ a:hover {
 .footer {
     margin: 8px;
     font-size: .8em;
+    color: #858282;
+}
+
+/* MEDIA QUERIES */
+  /*
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* .central {
+        margin-top: 150px;
+    } */
+
+    #gh-repo {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .repo-card {
+        width: 470px;
+    }
+
+  }
+
+  /*
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .repo-card {
+        width: 350px;
+    }
+
+  }
+
+  /*
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    #gh-repo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .repo-card {
+        width: 350px;
+    }
+
+  }
+
+  /*
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+  @media (min-width: 481px) and (max-width: 767px) {
+  }
+
+  /*
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    p {
+        font-size: .9em;
+    }
+
+    a {
+        font-size: .8em;
+    }
+
+    .lft h1 {
+        font-size: 1.2em;
+    }
+
+    .rt {
+        display: none;
+    }
+
+    .sm-mble {
+        font-size: .9em;
+    }
+
+    #gh-repo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .repo-card {
+        width: 300px;
+    }
+
+    .footer {
+        font-size: .7em;
+        margin-top: 10px;
+    }
+
 }
