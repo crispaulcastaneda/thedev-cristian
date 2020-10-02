@@ -202,6 +202,10 @@ a:hover {
 
 @media (min-width: 481px) and (max-width: 767px) {
 
+    .img-robo {
+        display: none;
+    }
+
     #gh-repo {
         display: flex;
         flex-wrap: wrap;
