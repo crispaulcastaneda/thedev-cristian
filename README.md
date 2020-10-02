@@ -1,19 +1,17 @@
-# About the Portfolio
-{thedevcristian} is a personal portfolio where I can share my projects to the internet and create ideas.
-It includes my past and recent projects for my future reference.
+# For Project Purposes
+Personal project with github API
 
 ## Markups and Technology
-```
-
-HTML / CSS
-JavaScript + Bundle with Lodash
-
-```
+![JavaScript](https://img.icons8.com/color/30/javascript.png)
+![HTML](https://img.icons8.com/color/30/html-filetype.png)
+![CSS](https://img.icons8.com/color/30/css-filetype.png)
 
 ### Documentation
 
 ### Thanks to
 
-Responsive Website: [Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
+Media Queries [Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
+
 Lodash [Lodash](https://lodash.com/)
-[Internetting is Hard](https://www.internetingishard.com/)
+
+Tarptaeya [Repo-Card](https://github.com/Tarptaeya/repo-card)
