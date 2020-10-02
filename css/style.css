@@ -200,8 +200,19 @@ a:hover {
     ##Screen = B/w 481px to 767px
   */
 
-  @media (min-width: 481px) and (max-width: 767px) {
-  }
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #gh-repo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .repo-card {
+        width: 300px;
+    }
+
+}
 
   /*
     ##Device = Most of the Smartphones Mobiles (Portrait)
