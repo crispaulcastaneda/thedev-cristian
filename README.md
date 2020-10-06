@@ -6,8 +6,6 @@ Personal project with github API
 ![HTML](https://img.icons8.com/color/30/html-filetype.png)
 ![CSS](https://img.icons8.com/color/30/css-filetype.png)
 
-### Documentation
-
 ### Acknowledgements
 
 Media Queries [Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
