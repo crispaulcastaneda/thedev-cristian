@@ -8,7 +8,7 @@ Personal project with github API
 
 ### Documentation
 
-### Thanks to
+### Acknowledgements
 
 Media Queries [Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
 
