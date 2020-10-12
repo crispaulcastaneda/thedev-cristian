@@ -9,6 +9,7 @@ let textListIndex = 0;
 let charIndex = 0;
 
 function type() {
+    'use strict'
     if (charIndex < textList[textListIndex].length) {
         typedTextSpan.textContent += textList[textListIndex].charAt(charIndex);
         charIndex++;
