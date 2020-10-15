@@ -1,5 +1,6 @@
-const typedTextSpan = document.querySelector(".wow");
+"use strict"
 
+const typedTextSpan = document.querySelector(".wow");
 const textList = ["{ Hello }", "Nice to see you here.", "Thank you."];
 const txtDelay = 200;
 const removeDelay = 100;
