@@ -34,3 +34,10 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(type, insertTxtDelay + 250);
 })
+
+
+// Light Mode
+function myFunction() {
+    let el = document.body;
+    el.classList.toggle("light-mode");
+}
