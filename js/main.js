@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Light Mode
-function myFunction() {
+function imgLight() {
     let el = document.body;
     el.classList.toggle("light-mode");
 }
