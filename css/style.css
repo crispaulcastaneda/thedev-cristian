@@ -132,6 +132,11 @@ a:hover {
     margin-right:10px;
 }
 
+#dev-badge {
+    width: 20px;
+    height: 20px;
+}
+
 .footer {
     margin:8px;
     font-size:.8em;
