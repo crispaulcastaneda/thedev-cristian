@@ -1,8 +1,8 @@
 @import "https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap";
 
 .light-mode {
-    background-color: #dbdbdb;
-    color: #111;
+    background-color:#dbdbdb;
+    color:#111;
 }
 
 body {
@@ -46,11 +46,11 @@ p {
 
 .img-robo {
     width:200px;
+    cursor:pointer;
 }
 
 a {
     text-decoration:none;
-    /* color:#111; */
 }
 
 a:hover {
@@ -115,7 +115,7 @@ a:hover {
 }
 
 #gh-repo {
-display:flex;
+    display:flex;
     justify-content:space-around;
 }
 
@@ -149,7 +149,7 @@ display:flex;
     }
 }
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .repo-card {
         width:350px;
     }
@@ -162,14 +162,14 @@ display:flex;
         align-items:flex-start;
     }
 
-.repo-card {
+    .repo-card {
         width:350px;
     }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
     .img-robo {
-       display:none;
+        display:none;
     }
 
     #gh-repo {
@@ -215,7 +215,7 @@ display:flex;
     }
 
     .footer {
-            font-size:.7em;
-            margin-top:10px;
-        }
+        font-size:.7em;
+        margin-top:10px;
     }
+}
