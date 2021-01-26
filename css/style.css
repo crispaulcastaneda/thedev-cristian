@@ -5,6 +5,14 @@
     color:#111;
 }
 
+.light-mode a {
+    color: #111!important;
+}
+
+.light-mode .footer {
+    color: #5c5b5b!important;
+}
+
 body {
     font-family:'Pt Sans',serif;
     background:#2C3A47;
@@ -57,42 +65,45 @@ a:hover {
     text-decoration:none;
 }
 
-.react {
-    background:#61DBFB;
-    padding:3.5px;
-    border-radius:5px;
-    color:#111;
+.par-link-design a.framework {
+    background:
+    linear-gradient(
+      to bottom, #a3a8a8 0%,
+      #13b5a4 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-size .3s;
 }
 
-.redux {
-    background:#764abc;
-    padding:3.5px;
-    border-radius:5px;
-    color:#eee;
-}
-
-.node {
-    background:#3C873A;
-    padding:3.5px;
-    border-radius:5px;
-    color:#eee;
-}
-
-.libraries {
-    background:#602C50;
-    padding:3.5px;
-    border-radius:5px;
-    color:#eee;
+.par-link-design .framework:hover {
+    background-size: 4px 50px;
+    color: #111;
 }
 
 .email {
-    color:#858282;
-    transition:.4s all ease-in-out;
+    background:
+    linear-gradient(
+      to bottom, #13b5a4 0%,
+      #13b5a4 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    color: #e9e2e2;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-size .3s;
 }
 
 .email:hover {
-    font-weight:800;
-    color:#01a3a4;
+    background-size: 4px 50px;
+    color: #111;
 }
 
 .center-me-pls {
@@ -100,18 +111,24 @@ a:hover {
 }
 
 .more-on a {
-    text-align:center;
-    font-size:.7rem;
-    margin:20px;
-    margin-bottom:30px;
-    width:80px;
-    color:#858282;
-    transition:.3s all ease-in-out;
+    background:
+    linear-gradient(
+      to bottom, #13b5a4 0%,
+      #13b5a4 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    font-size: .8rem;
+    color: #e9e2e2;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-size .3s;
 }
 
 .more-on a:hover {
-    font-weight:800;
-    color:#01a3a4;
+    background-size: 4px 50px;
+    color: #111;
 }
 
 #gh-repo {
@@ -138,9 +155,10 @@ a:hover {
 }
 
 .footer {
-    margin:8px;
+    margin:12px;
     font-size:.8em;
-    color:#858282;
+    color:#b1a8a8;
+    font-weight: 900;
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
