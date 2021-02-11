@@ -1,5 +1,16 @@
 @import "https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap";
 
+/* Cursor */
+.cursor {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #111;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
 .light-mode {
     background-color:#dbdbdb;
     color:#111;
@@ -11,6 +22,10 @@
 
 .light-mode .footer {
     color: #5c5b5b!important;
+}
+
+html {
+    cursor: none;
 }
 
 body {
@@ -53,11 +68,12 @@ p {
 
 .img-robo {
     width:200px;
-    cursor:pointer;
+    cursor:none;
 }
 
 a {
     text-decoration:none;
+    cursor:none;
 }
 
 a:hover {
