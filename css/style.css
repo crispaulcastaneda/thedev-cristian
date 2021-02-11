@@ -2,9 +2,9 @@
 
 /* Cursor */
 .cursor {
-    width: 1rem;
-    height: 1rem;
-    border: 2px solid #111;
+    width: .8rem;
+    height: .8rem;
+    border: 5px solid #cee453;
     border-radius: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
