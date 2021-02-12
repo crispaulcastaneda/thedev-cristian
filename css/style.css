@@ -177,6 +177,10 @@ a:hover {
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+    .cursor {
+        display: none;
+    }
+
     #gh-repo {
         display:flex;
         align-items:flex-start;
@@ -194,6 +198,10 @@ a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .cursor {
+        display: none;
+    }
+
     #gh-repo {
         display:flex;
         flex-wrap:wrap;
@@ -222,6 +230,10 @@ a:hover {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .cursor {
+        display: none;
+    }
+
     p {
         font-size:.9em;
     }
