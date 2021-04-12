@@ -18,8 +18,10 @@ Personal project with github API
 
 Media Queries [Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
 
-Lodash [Lodash](https://lodash.com/)
+Lodash [Lodash](https://lodash.com)
 
 Tarptaeya [Repo-Card](https://github.com/Tarptaeya/repo-card)
 
-[CSS Compiler](https://www.cssportal.com/css-optimize/)
+CSS Compiler [CSS Compiler](https://www.cssportal.com/css-optimize)
+
+Flaticon [Flaticon](https://www.flaticon.com)
