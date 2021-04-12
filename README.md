@@ -16,12 +16,12 @@ Personal project with github API
 
 ### Acknowledgements
 
-Media Queries [Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
+[Gokul Krishh](https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488)
 
-Lodash [Lodash](https://lodash.com)
+[Lodash](https://lodash.com)
 
-Tarptaeya [Repo-Card](https://github.com/Tarptaeya/repo-card)
+[Repo-Card](https://github.com/Tarptaeya/repo-card)
 
-CSS Compiler [CSS Compiler](https://www.cssportal.com/css-optimize)
+[CSS Compiler](https://www.cssportal.com/css-optimize)
 
-Flaticon [Flaticon](https://www.flaticon.com)
+[Flaticon](https://www.flaticon.com)
