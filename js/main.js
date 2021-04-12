@@ -1,14 +1,17 @@
 "use strict"
 
+// array text design
 const typedTextSpan = document.querySelector(".wow");
 const textList = ["{ Hello }", "Nice to see you here.", "Thank you."];
 const txtDelay = 200;
 const removeDelay = 100;
 const insertTxtDelay = 2000;
 
+// index
 let textListIndex = 0;
 let charIndex = 0;
 
+// function to display array
 const type = () => {
     if (charIndex < textList[textListIndex].length) {
         typedTextSpan.textContent += textList[textListIndex].charAt(charIndex);
@@ -19,6 +22,7 @@ const type = () => {
     }
 }
 
+// function to delete array and insert new array
 const erase = () => {
     if (charIndex > 0) {
         typedTextSpan.textContent = textList[textListIndex].substring(0, charIndex-1);
@@ -32,13 +36,15 @@ const erase = () => {
 }
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(type, insertTxtDelay + 250);
-})
+});
 
 
 // For Toggle menu
 // Updated 4/12/2021
 const body = document.querySelector('body');
 const toggle = document.getElementById('toggle');
+
+// create function for class
 toggle.onclick = () => {
     toggle.classList.toggle('active');
     body.classList.toggle('active');
