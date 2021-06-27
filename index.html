@@ -14,39 +14,57 @@
     <!-- repo-card -->
     <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
 
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&Yrsa&Kanit">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <main class="central">
-        <!-- Toggle for Dark mode -->
-        <div id="toggle-c">
-            <div id="toggle">
-                <i class="indicator"><img src="img/eye.png" alt=""></i>
+    <!-- HEADER -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24"
+                    viewBox="0 0 24 24"
+                    style="fill:rgba(0, 0, 0, 1);transform:-ms-filter;">
+                    <path d="M4 6H20V8H4zM8 11H20V13H8zM13 16H20V18H13z"></path>
+                </svg>
             </div>
-        </div>
 
-        <section id="header" >
-            <article class="lft">
-                <h1>Hi, I'm Cristian Paul Castañeda</h1>
-                <h2 class="greet">👨‍💻 <span class='wow'> </span></h2>
-                <p class="par-link-design">
-                        A Web Developer, based from Taguig, Philippines. <br>
-                        I used current tools such as Vue.js, Node.js, design with SASS, Bootstrap and libraries that will help to build websites and apps.
-                </p>
-                <p class="sm-mble">Email to contact <i class="email">
-                    <a href="mailto:=cristianpaul_c@yahoo.com?Subject=Hello">cristianpaul_c@yahoo.com</a></i>
-                </p>
-            </article>
+            <div>
+                <a href="#" class="nav__logo">Cristian Paul Castañeda</a>
+            </div>
 
-            <article class="rt">
-                <img onclick="imgLight()" class="img-robo" src="img/robo.png" alt="robo-img" title="🤖">
-            </article>
-        </section>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24"
+                        viewBox="0 0 24 24"
+                        style="fill:rgba(0, 0, 0, 1);transform:-ms-filter;">
+                        <path d="M10 4L8 4 8 8 4 8 4 10 10 10zM8 20L10 20 10 14 4 14 4 16 8 16zM20 14L14 14 14 20 16 20 16 16 20 16zM20 8L16 8 16 4 14 4 14 10 20 10z"></path>
+                    </svg>
+                </div>
 
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!--
         <section id="gh-repo">
-            <!-- for Repo card -->
             <article>
                 <div class="repo-card" data-repo="crispaulcastaneda/dev-blog-template"></div>
                 <div class="repo-card" data-repo="crispaulcastaneda/marichu-galleria"></div>
@@ -59,29 +77,15 @@
             </article>
         </section>
 
+
         <section class="center-me-pls">
             <p class="more-on">
                 <a href="https://github.com/crispaulcastaneda">More on GitHub</a>
             </p>
         </section>
 
-        <section id="other-contact">
-            <article class="professional-dev">
-                <a href="https://www.github.com/crispaulcastaneda">
-                    <img src="https://img.icons8.com/fluent/20/github.png" alt="github">
-                </a>
-                <a href="https://www.linkedin.com/in/cristianpaul">
-                    <img src="https://img.icons8.com/fluent/20/linkedin-2.png" alt="linkedin">
-                </a>
-                <a href="https://dev.to/thedevcristian">
-                    <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" id="dev-badge" alt="Cristian Paul Castañeda's DEV Profile">
-                  </a>
-            </article>
-            <footer class="footer">
-                &copy; crispaulcastaneda. All Rights Reserved. 2021
-            </footer>
-        </section>
-    </main>
+-->
+
 
     <script src="js/main.js" defer></script>
 </body>

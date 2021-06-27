@@ -1,51 +1,44 @@
 "use strict"
 
-// array text design
-const typedTextSpan = document.querySelector(".wow");
-const textList = ["{ Hello }", "Nice to see you here.", "Thank you."];
-const txtDelay = 200;
-const removeDelay = 100;
-const insertTxtDelay = 2000;
 
-// index
-let textListIndex = 0;
-let charIndex = 0;
+// MENU Constants
+const nav__menu = document.getElementById('nav-menu'),
+      toggle__menu = document.getElementById('nav-toggle'),
+      close__menu = document.getElementById('nav-close');
 
-// function to display array
-const type = () => {
-    if (charIndex < textList[textListIndex].length) {
-        typedTextSpan.textContent += textList[textListIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, txtDelay);
-    } else {
-        setTimeout(erase, insertTxtDelay);
-    }
-}
-
-// function to delete array and insert new array
-const erase = () => {
-    if (charIndex > 0) {
-        typedTextSpan.textContent = textList[textListIndex].substring(0, charIndex-1);
-        charIndex--;
-        setTimeout(erase, removeDelay);
-    } else {
-        textListIndex++;
-        if (textListIndex >= textList.length) textListIndex = 0;
-        setTimeout(type, txtDelay + 1100);
-    }
-}
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(type, insertTxtDelay + 250);
+// SHOW
+toggle__menu.addEventListener('click', () => {
+    nav__menu.classList.toggle('show');
 });
 
+// HIDDEN
+close__menu.addEventListener('click', () => {
+    nav__menu.classList.remove('show');
+})
 
-// For Toggle menu
-// Updated 4/12/2021
-const body = document.querySelector('body');
-const toggle = document.getElementById('toggle');
+// REMOVE MENU
+const nav__link = document.querySelectorAll('.nav__link');
 
-// create function for class
-toggle.onclick = () => {
-    toggle.classList.toggle('active');
-    body.classList.toggle('active');
+function linkAction() {
+    nav__menu.classList.remove('show')
+}
+nav__link.forEach(n => n.addEventListener('click', linkAction));
+
+// SCROLL SECTIONS ACTIVE LINK
+const sections = document.querySelectorAll('section[id]');
+
+window.addEventListener('scroll', scrollActive);
+function scrollActive() {
+    const scrollY = window.pageYOffset;
+    sections.foreach(current => {
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50
+        sectionId = current.getAttribute('id')
+
+        if (scrollY > scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.nav__menu a[href*='+ sectionId + ']').classList.add('active')
+        } else {
+            document.querySelector('.nav__menu a[href*='+ sectionId + ']').classList.remove('active')
+        }
+    })
 }
