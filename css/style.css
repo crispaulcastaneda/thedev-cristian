@@ -66,6 +66,9 @@ h1, h2, h3, p {
 
 h1 {
     font-family: var(--heading-font);
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
 
 h2, h3 {
@@ -250,7 +253,12 @@ img {
 }
 
 .home__social-link:hover {
-    background-color: var(--important-clr);
+    background-color: var(--light-txt-clr);
+    color: var(--about-img);
+}
+
+span.home__profession {
+    margin-bottom: .8rem;
 }
 
 .home__button {
@@ -261,15 +269,16 @@ img {
 .button {
     display: inline-block;
     background-color: var(--background-clr);
-    color: var(--surface-clr);
-    padding: 1rem 2rem;
+    color: #eee;
+    padding: .9rem 1.5rem;
     font-weight: var(--font-semi-strong);
     border-radius: .5rem;
     transition: .3s;
 }
 
 .button:hover {
-    background-color: var(--text-clr);
+    background-color: #f1f391;
+    color: var(--background-clr);
 }
 
 /* ABOUT */
@@ -284,6 +293,8 @@ img {
 
 .about__description {
     margin-bottom: var(--mb-4);
+    color: #6d6060;
+    font-weight: 550;
 }
 
 .about__img {
@@ -344,7 +355,7 @@ img {
 
 .skills__name {
     background: var(--background-clr);
-    color: var(--surface-clr);
+    color: var(--light-txt-clr);
     padding: .8rem;
     text-transform: uppercase;
 }
@@ -363,12 +374,15 @@ img {
 .education__race {
     font-size: var(--h2-fontsz);
     margin-bottom: .25rem;
+    color: #6d6060;
 }
 
 .education__university,
 .education__specialty {
     display: block;
     font-style: var(--smaller-fontsz);
+    color: #6d6060;
+    font-weight: bold;
 }
 
 .education__year,
@@ -460,6 +474,7 @@ img {
 
 .only-red {
     color: #ec263e;
+    text-align: left;
 }
 
 .project__container {
@@ -468,6 +483,13 @@ img {
 
 .project__data {
     text-align: center;
+}
+
+.project__data .gray {
+    color: #f1f391;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
+    margin-bottom: 1rem;
 }
 
 .project__title,
@@ -580,7 +602,12 @@ img {
     margin-bottom: var(--mb-2);
 }
 
+.footer__description {
+    font-weight: var(--font-strong);
+}
+
 .footer__social {
+    margin-top: 1rem;
     margin-bottom: 3rem;
 }
 
@@ -664,6 +691,7 @@ img {
         grid-template-columns: 2fr 1.2fr;
         padding: 0 2rem;
         border-radius: .5rem;
+        box-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
     }
 
     .project__data {
@@ -728,4 +756,6 @@ img {
     .services__container {
         grid-template-columns: repeat(3, 1fr);
     }
+
+
 }
