@@ -437,6 +437,7 @@ span.home__profession {
     border: 2px solid var(--important-clr);
     border-radius: .5rem;
     text-align: center;
+    box-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
 }
 
 .services__icon {
@@ -460,15 +461,21 @@ span.home__profession {
     transition: .5s;
 }
 
-.services__content:hover {
+.services__content img {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: .8rem;
+}
+
+.services__content {
     background-color: var(--background-clr);
-    color: var(--important-clr);
+    color: var(--text-clrN);
     border: 1px solid var(--background-clr);
 }
 
-.services__icon:hover {
+/* .services__icon:hover {
     background-color: var(--background-clr);
-}
+} */
 
 /* PROJECT */
 .project {
@@ -600,7 +607,8 @@ span.home__profession {
 
 /* FOOTER */
 .footer {
-    background-color: var(--text-clr);
+    /* background-color: var(--text-clr); */
+    background-image: url('img/a.jpg');
     color: var(--surface-clr);
     text-align: center;
 }
