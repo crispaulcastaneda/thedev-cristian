@@ -115,6 +115,7 @@ img {
     font-size: var(--small-fontsz);
     color: var(--text-clr);
     text-align: center;
+    text-transform: UPPERCASE;
     font-weight: var(--font-strong);
     margin-bottom: .25rem;
 }
@@ -260,6 +261,7 @@ img {
 
 span.home__profession {
     margin-bottom: .8rem;
+    text-transform: uppercase;
 }
 
 .home__button {
@@ -360,6 +362,7 @@ span.home__profession {
     color: var(--light-txt-clr);
     padding: .8rem;
     text-transform: uppercase;
+    box-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
 }
 
 /* EDUCATION */
@@ -447,7 +450,6 @@ span.home__profession {
 
 .services__title {
     font-size: 1.25rem;
-    color: var(--about-img);
     margin-bottom: var(--mb-1);
 }
 
@@ -459,13 +461,13 @@ span.home__profession {
 }
 
 .services__content:hover {
-    background-color: var(--surface-clr);
+    background-color: var(--background-clr);
+    color: var(--important-clr);
+    border: 1px solid var(--background-clr);
 }
 
-.services__content:hover,
-.services__icon {
-    background-color: var(--surface-clr);
-    color: var(--important-clr);
+.services__icon:hover {
+    background-color: var(--background-clr);
 }
 
 /* PROJECT */
