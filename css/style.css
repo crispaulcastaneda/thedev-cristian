@@ -11,8 +11,9 @@
     /* COLOR */
     --surface-clr: #DFDCE3;
     --text-clr: #54423D;
+    --text-clrN: #AEAEAE;
     --light-txt-clr: #eae7e6;
-    --background-clr: #4abdac;
+    --background-clr: #171717;
     --objects-clr: #FC4A1A;
     --important-clr: #da960e;
     --about-img: #653f27;
@@ -52,7 +53,7 @@ html {
 
 body {
     margin: var(--header-height) 0 0 0;
-    font-family: var(--heading-font);
+    font-family: 'Roboto', sans-serif;
     font-size: var(--normal-fontsz);
     font-weight: var(--font-medium);
     background-color: var(--light-txt-clr);
@@ -65,19 +66,19 @@ h1, h2, h3, p {
 }
 
 h1 {
-    font-family: var(--heading-font);
+    font-family: 'Roboto', sans-serif;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
 }
 
 h2, h3 {
-    font-family: var(--subheading-font);
+    font-family: 'Roboto', sans-serif;
     font-weight: var(--font-semi-strong);
 }
 
 p {
-    font-family: var(--contents-font);
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -289,7 +290,7 @@ span.home__profession {
 
 .about__data {
     text-align: center;
-    font-family: var(--contents-font);
+    font-family: 'Roboto', sans-serif;
 }
 
 .about__description {
@@ -306,7 +307,7 @@ span.home__profession {
 
 .about__information {
     margin-bottom: var(--mb-4);
-    font-family: var(--contents-font);
+    font-family: 'Roboto', sans-serif;
 }
 
 .about__information-title {
@@ -351,7 +352,7 @@ span.home__profession {
 .skills-data {
     position: relative;
     margin: 2rem;
-    font-family: var(--contents-font);
+    font-family: 'Roboto', sans-serif;
 }
 
 .skills__name {
@@ -546,7 +547,7 @@ span.home__profession {
 
 .works__title {
     font-size: var(--h2-fontsz);
-    color: var(--about-img);
+    color: var(--background-clr);
     font-weight: var(--font-strong)
 }
 
@@ -556,12 +557,14 @@ span.home__profession {
 
 /* CONTACT */
 .contact {
-    background: #119281;
+    background: var(--background-clr);
     color: var(--surface-clr);
 }
 
 .section-title {
     color: #d32135;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    text-transform: uppercase;
 }
 
 .contact__container {
