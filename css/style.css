@@ -296,6 +296,10 @@ body {
         font-size: 1rem;
     }
 
+    .icon-copyrights a {
+        text-decoration: none;
+    }
+
     .icon-copyrights .bx {
         font-size: 1.3rem;
     }
