@@ -105,6 +105,10 @@ body {
     }
 
     /* Three_D interaction */
+    #three_d-interaction {
+        margin-bottom: 15px;
+    }
+
     .three_dee img {
         width: 100%;
     }
@@ -114,28 +118,12 @@ body {
         margin: 15px 15px;
     }
 
-    /* FOOTER */
-    .header-copyrights {
-        font-size: .6rem;
-        text-align: center;
-        margin: 8px;
-    }
-
-    .icon-copyrights {
-        text-align: center;
-    }
-
-    .icon-copyrights i {
-        margin: 0 5px;
-        font-size: 1rem;
-    }
-
     /* SCROLL BTN */
     .scrollToTopBtn {
         background-color: #632EE1;
         border: none;
         border-radius: 50%;
-        color: #DEDEDE;
+        /* color: #DEDEDE; */
         cursor: pointer;
         font-size: 1rem;
         line-height: 40px;
@@ -181,11 +169,12 @@ body {
         background-color:#DEDEDE;
         margin: 0;
         padding: 5px;
+        text-align: center;
     }
 
     .description .type-of-project {
         font-size: .8rem;
-        margin: 0 10px;
+        margin: 0 5px;
     }
 
     .type-of-project {
@@ -194,6 +183,45 @@ body {
         border-radius: 5px;
         padding: 5px 5px;
         line-height: 30px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    /* CONTACT */
+    .contact-banner img {
+        width: 100%;
+    }
+
+    .inner-contacts h1 {
+        margin-bottom: 15px;
+    }
+
+    .inner-contacts p {
+        color: #5a5a5a;
+    }
+
+    .inner-contacts a {
+        text-decoration: none;
+        color:#3AB295;
+    }
+
+     /* FOOTER */
+     #footer-content {
+         margin-bottom: 15px;
+     }
+
+     .header-copyrights {
+        font-size: .6rem;
+        text-align: center;
+        margin: 8px;
+    }
+
+    .icon-copyrights {
+        text-align: center;
+    }
+
+    .icon-copyrights i {
+        margin: 0 5px;
+        font-size: 1rem;
     }
 
 }
