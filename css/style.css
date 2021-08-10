@@ -226,7 +226,13 @@ body {
 
 }
 
-@media (min-width:481px) {}
+@media (min-width:481px) {
+
+    #main-content {
+        max-width: 441px;
+    }
+
+}
 @media (min-width:641px) {}
 @media (min-width:961px) {}
 @media (min-width:1281px) {}
