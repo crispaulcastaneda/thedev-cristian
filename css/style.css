@@ -257,6 +257,22 @@ body {
         max-width: 850px;
     }
 
+    #contents .third-highlight {
+        font-size: 1rem;
+    }
+
+    .experience h3 {
+        font-size: 1.2rem;
+    }
+
+    .experience h4 {
+        font-size: 1rem;
+    }
+
+    .date-of-hired {
+        font-size: 1rem;
+    }
+
     .three_dee,
     .contact-banner {
         text-align: center;
@@ -267,9 +283,21 @@ body {
         width: 30%;
     }
 
-    .header-copyrights p,
-    .icon-copyrights .bx {
+    #footer-content {
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .icon-copyrights {
+        align-self: center;
+    }
+
+    .header-copyrights p {
         font-size: 1rem;
+    }
+
+    .icon-copyrights .bx {
+        font-size: 1.3rem;
     }
 
 }
