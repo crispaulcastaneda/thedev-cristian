@@ -229,10 +229,37 @@ body {
 @media (min-width:481px) {
 
     #main-content {
-        max-width: 441px;
+        max-width: 431px;
     }
 
 }
-@media (min-width:641px) {}
-@media (min-width:961px) {}
-@media (min-width:1281px) {}
+@media (min-width:641px) {
+    #main-content {
+        max-width: 611px;
+    }
+
+    /* PROJECTS */
+    .to-display-md {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .third-layer-content {
+        width: 45%;
+        margin: 5px;
+    }
+
+}
+@media (min-width:961px) {
+
+    #main-content {
+        max-width: 850px;
+    }
+
+}
+@media (min-width:1281px) {
+    #main-content {
+        max-width: 1150px;
+    }
+}
