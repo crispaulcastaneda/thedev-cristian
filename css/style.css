@@ -257,6 +257,21 @@ body {
         max-width: 850px;
     }
 
+    .three_dee,
+    .contact-banner {
+        text-align: center;
+    }
+
+    .three_dee img,
+    .contact-banner img {
+        width: 30%;
+    }
+
+    .header-copyrights p,
+    .icon-copyrights .bx {
+        font-size: 1rem;
+    }
+
 }
 @media (min-width:1281px) {
     #main-content {
