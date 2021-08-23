@@ -17,6 +17,10 @@ li { list-style: none; }
 a, li { text-decoration: none; }
 img { width: 100%; }
 
+h1 {
+    font-size: 1.5rem;
+}
+
 h1, h2, h3 {
     margin: 6px 0;
 }
@@ -80,7 +84,13 @@ img.icon-head {
     margin: 16px 0 0 0;
 }
 
-.programming-lang {
+/* SKILLS */
+.skills {
+    margin-bottom: 18px;
+}
+
+.programming-lang,
+.type-of-project {
     background-color: #632EE1;
     color: #DEDEDE;
     padding: 8px;
@@ -91,16 +101,31 @@ img.icon-head {
     transition: all .3s ease-in-out;
 }
 
-.programming-lang:hover {
+.programming-lang:hover,
+.type-of-project:hover {
     color: #632EE1;
     background-color: #DEDEDE;
     cursor: pointer;
 }
 
+/* Blogpost */
+#blogpost {
+    margin-top: 18px;
+}
+
 /* SECOND LAYER */
+
+#project-contact-layer {
+    border-left: 2px solid #DEDEDE;
+    padding: 0 0 0 15px;
+}
 
 .project h1 {
     text-transform: uppercase;
+}
+
+.project p {
+    margin-bottom: 10px;
 }
 
 .projects {
@@ -108,8 +133,64 @@ img.icon-head {
 }
 
 .projects img {
+    width: 100%;
+}
+
+.description,
+.blog-box p {
+    padding: 10px;
+}
+
+.third-layer-content,
+.blog-box {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background: #e9e9e9;
     width: 80%;
 }
+
+/* CONTACT */
+.contact-banner img {
+    width: 40%;
+}
+
+.scrollToTopBtn {
+    /* same general styles as before */
+
+    /* place it at the bottom-right corner */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    /* keep it at the top of everything else */
+    z-index: 100;
+
+    /* hide with opacity */
+    opacity: 0;
+
+    /* also add a translate effect */
+    transform: translateY(100px);
+
+    /* and a transition */
+    transition: all .5s ease
+}
+
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0)
+  }
+
+  #scrollToTopBtn {
+    background-color: #632EE1;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
 
 
 /* FOOTER */

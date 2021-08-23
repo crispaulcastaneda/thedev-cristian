@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // SCROLL TO TOP
 
-var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var scrollToTopBtn = document.querySelector('.scrollToTopBtn')
 var rootElement = document.documentElement
 
 function handleScroll() {
