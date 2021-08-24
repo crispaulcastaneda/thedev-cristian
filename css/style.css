@@ -444,6 +444,7 @@ img.icon-head {
 
     .icon-divider .bx {
         background: none;
+        font-size: .9rem;
     }
 
     .personal-sites {
@@ -486,14 +487,29 @@ img.icon-head {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
+    body {
+        line-height: 24px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: .9rem;
+    }
+
+    h3 {
+        font-size: .8rem;
+    }
+
+    p, span {
+        font-size: .7rem;
+    }
+
     #wrapper {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    #header h1,
-    #contents h1 {
-        font-size: 1rem;
     }
 
     #header .icon-head {
@@ -508,6 +524,26 @@ img.icon-head {
         margin: 0 auto;
     }
 
-    /* Main content */
+    .icon-divider {
+        width: 50%;
+    }
+
+    .icon-divider .bx {
+        background: none;
+    }
+
+    .personal-sites {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .style-box {
+        width: 100%;
+    }
+
+    #project-contact-layer {
+        border-left: none;
+        padding: 0;
+    }
 
 }
