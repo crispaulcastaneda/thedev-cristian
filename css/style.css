@@ -404,7 +404,13 @@ img.icon-head {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-    /* CSS */
+    #header,
+    #wrapper,
+    #project-contact-layer,
+    #footer {
+        max-width: 720px;
+        margin: 0 auto;
+    }
 
 }
 
@@ -415,7 +421,61 @@ img.icon-head {
 
 @media (min-width: 481px) and (max-width: 767px) {
 
-    /* CSS */
+    #wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #header .icon-head {
+        display: none;
+    }
+
+    #header,
+    #wrapper,
+    #project-contact-layer,
+    #footer {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .icon-divider {
+        width: 50%;
+    }
+
+    .icon-divider .bx {
+        background: none;
+    }
+
+    .personal-sites {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #project-contact-layer {
+        border-left: none;
+        padding: 0;
+    }
+
+    .to-display-md {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .style-box {
+        width: 100%;
+    }
+
+    .third-layer-content {
+        width: 45%;
+    }
+
+    .description .type-of-project {
+        font-size: .6rem;
+    }
+
+    #footer {
+        font-size: .7rem;
+    }
 
 }
 
@@ -426,6 +486,28 @@ img.icon-head {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    /* CSS */
+    #wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #header h1,
+    #contents h1 {
+        font-size: 1rem;
+    }
+
+    #header .icon-head {
+        display: none;
+    }
+
+    #header,
+    #wrapper,
+    #project-contact-layer,
+    #footer {
+        max-width: 310px;
+        margin: 0 auto;
+    }
+
+    /* Main content */
 
 }
