@@ -297,3 +297,48 @@ li a:hover {
     top: 155px;
     transition:all 500ms ease-in-out;
 }
+
+/* WORKS */
+.work-details {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-1 {
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.box-1 img,
+.box-2 img {
+    width: 100%;
+    filter: blur(1px);
+    z-index: 1;
+}
+
+.box-1 img:hover,
+.box-2 img:hover {
+    filter: none;
+    transition: all .2s ease-in-out;
+}
+
+.par {
+    width: 500px;
+    padding: 20px;
+    background: #00acee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.project-description-1 {
+    position: absolute;
+    top: 50px;
+    left: 350px;
+}
+
+.project-description-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
