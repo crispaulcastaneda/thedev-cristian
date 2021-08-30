@@ -10,8 +10,6 @@
     <title>Cristian Paul Castañeda | Web Developer</title>
 
     <!-- Google Font -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet"> -->
-
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
 
     <!-- BOXICONS -->
@@ -22,6 +20,9 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 <body>
@@ -57,10 +58,10 @@
         </div>
     </main>
 
-    <section id="about">
+    <section id="about" >
         <div class="inner-about">
             <div class="author-about">
-                <h1> <span class="roman-num">I.</span> ABOUT CRISTIAN </h1>
+                <h1 class="animate__animated animate__fadeInDown"> <span class="roman-num">I.</span> ABOUT CRISTIAN </h1>
                 <p class="author-line"></p>
             </div>
 
@@ -85,7 +86,7 @@
         </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" >
         <div class="inner-experience">
             <div class="author-experience">
                 <h1> <span class="roman-num">II.</span> WORK EXPERIENCE</h1>
@@ -224,7 +225,7 @@
                         </a>
                     </div> <!-- End of Header icon-->
                     <h4>Covid-19 Tracker</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cupiditate reprehenderit at doloribus, saepe corporis.</p>
+                    <p>Learning with the react components and running around with real-time update of Covid-19 JSON objects.</p>
                     <p class="spans">
                         <span>React.js</span>
                         <span>Material UI</span>
@@ -241,10 +242,10 @@
                         </a>
                     </div> <!-- End of Header icon-->
                     <h4>Travel sa Pinas</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cupiditate reprehenderit at doloribus, saepe corporis.</p>
+                    <p>Landing page that is made to form a Static Website with JSON Search of places.</p>
                     <p class="spans">
-                        <span>React.js</span>
-                        <span>Material UI</span>
+                        <span>Front-end Development</span>
+                        <span>JSON</span>
                     </p>
                 </div> <!-- Emd of REPO-->
 
@@ -258,10 +259,10 @@
                         </a>
                     </div> <!-- End of Header icon-->
                     <h4>Money Rate</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cupiditate reprehenderit at doloribus, saepe corporis.</p>
+                    <p>Learned Fetch API and React.js relationship to built a money conversion.</p>
                     <p class="spans">
                         <span>React.js</span>
-                        <span>Material UI</span>
+                        <span>API</span>
                     </p>
                 </div> <!-- Emd of REPO-->
             </div> <!-- End of GH-Repo-->
@@ -282,7 +283,24 @@
         </div>
     </section>
 
-    <footer id="footer">
+    <aside id="aside">
+        <div class="for-relative">
+            <div class="inner-aside">
+                <div class="aside-icons">
+                    <span><a href="https://www.github.com/crispaulcastaneda"><i class='bx bxl-github class-here' style='color:#34a7e4'  ></i></a></span>
+                    <span><a href="https://www.linkedin.com/in/cristianpaul"><i class='bx bxl-linkedin class-here' style='color:#34a7e4' ></i></a></span>
+                    <span><a href="https://www.behance.net/crispaulcastaneda"><i class='bx bxl-behance class-here' style='color:#34a7e4'  ></i></a></span>
+                    <span><a href="https://www.codewars.com/users/crispaulcastaneda"><i class='bx bx-code-curly class-here' style='color:#34a7e4'  ></i></a></span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <button id="scrollToTopBtn" class="scrollToTopBtn">
+        <i class='bx bx-up-arrow bx-fade-down' ></i>
+    </button>
+
+    <footer id="footer"">
         <div class="inner-footer">
             <p>Designed and built by Cristian Paul Castañeda</p>
             <p>All Rights Reserved, 2021</p>

@@ -443,12 +443,87 @@ li a:hover {
 }
 
 /* FOR ASIDE ICONS */
-.classhere {
+
+.for-relative {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+}
+
+.aside-icons {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.aside-icons span {
+    margin: 10px 0;
+}
+
+.aside-icons:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color:#02a9f7;
+}
+
+
+.class-here {
     position: relative;
     top: 0;
     transition: top ease 0.5s;
+    font-size: 1.5rem;
 }
 
-.classhere:hover {
+.class-here:hover {
     top: -10px;
+}
+
+/* SCROLL */
+/* SCROLL */
+.scrollToTopBtn {
+    /* same general styles as before */
+
+    /* place it at the bottom-right corner */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    /* keep it at the top of everything else */
+    z-index: 100;
+
+    /* hide with opacity */
+    opacity: 0;
+
+    /* also add a translate effect */
+    transform: translateY(100px);
+
+    /* and a transition */
+    transition: all .5s ease
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+#scrollToTopBtn {
+    background-color: #02577A;
+    border: none;
+    border-radius: 50%;
+    color: #02a9f7;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
