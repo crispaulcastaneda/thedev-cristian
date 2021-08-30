@@ -378,7 +378,7 @@ li a:hover {
 
 .repo {
     width: 30%;
-    padding: 20px;
+    padding: 10px;
     margin: 0 20px;
     text-align: center;
     background:#076280;
@@ -460,7 +460,6 @@ li a:hover {
     align-items: center;
     margin: 0px;
     padding: 0px;
-    list-style: none;
 }
 
 .aside-icons span {
@@ -477,14 +476,16 @@ li a:hover {
 }
 
 
-.class-here {
+.class-here,
+.repo {
     position: relative;
     top: 0;
     transition: top ease 0.5s;
     font-size: 1.5rem;
 }
 
-.class-here:hover {
+.class-here:hover,
+.repo:hover {
     top: -10px;
 }
 
@@ -526,4 +527,354 @@ li a:hover {
     line-height: 48px;
     width: 48px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+
+/* MEDIA QUERIES */
+/**
+ * ##Device = Desktops
+ * ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* OK */
+
+    .row .hamburger {
+        display:none;
+    }
+}
+
+/**
+    * ##Device = Laptops, Desktops
+    * ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    #website-main,
+    #about,
+    #experience,
+    #work,
+    #contact {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 800px;
+        min-height: 100vh;
+    }
+
+    .row .hamburger {
+        display:none;
+    }
+
+    .tabs {
+        width: 800px;
+        height: 480px;
+    }
+
+    .tabs .tab-indicator {
+        left: 19px;
+    }
+
+    .repo {
+        font-size: 1rem;
+    }
+
+}
+
+/**
+    * ##Device = Tablets, Ipads (portrait)
+    * ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #website-header {
+        position: fixed;
+        width: 100%;
+    }
+
+    #website-main,
+    #about,
+    #experience,
+    #work,
+    #contact {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 650px;
+        min-height: 100vh;
+    }
+
+    .hamburger {
+        display: block;
+        background-color: transparent;
+        border: 0;
+        color: #D4F0FC;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+
+    .hamburger:focus {
+        outline: none;
+    }
+
+    .row #nav {
+        display:none;
+        width: 100%;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #nav.show {
+        display: flex;
+    }
+
+    .main-author {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
+    span {
+        font-size: .8rem;
+    }
+
+    rect.shape {
+        width: 140px;
+    }
+
+    .text {
+        font-size: .9rem;
+        width: 144px;
+    }
+
+    .tabs {
+        width: 600px;
+        height: 600px;
+    }
+
+    .tabs .tab-indicator {
+        left: 44px;
+    }
+
+    .project-1,
+    .project-2,
+    .project-3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project-2 {
+        flex-direction: column-reverse;
+    }
+
+    .gh-repo {
+        flex-direction: column;
+    }
+
+    .repo {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .for-relative {
+        position: inherit;
+        margin: 0 auto;
+    }
+
+    .inner-aside {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .aside-icons {
+        flex-direction: row;
+    }
+
+    .aside-icons span {
+        margin: 20px;
+    }
+
+    .aside-icons:after {
+        display: none;
+    }
+
+}
+
+/*
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {/* OKS */}
+
+/*
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #website-header {
+        position: fixed;
+        width: 100%;
+    }
+
+    #website-main,
+    #about,
+    #experience,
+    #work,
+    #contact {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 380px;
+        min-height: 100vh;
+    }
+
+    .hamburger {
+        display: block;
+        background-color: transparent;
+        border: 0;
+        color: #D4F0FC;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+
+    .hamburger:focus {
+        outline: none;
+    }
+
+    .row #nav {
+        display:none;
+        width: 100%;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #nav.show {
+        display: flex;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    .main-author {
+        font-size: 1.5rem;
+    }
+
+    .main-description {
+        width: 100%;
+    }
+
+    rect.shape {
+        width: 140px;
+    }
+
+    .tech1, .tool {
+        font-size: .5rem;
+    }
+
+    .text {
+        font-size: .9rem;
+        width: 144px;
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 400px;
+        padding: 0;
+    }
+
+    .tabs .tab-header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        height: 15%;
+        border: none;
+    }
+
+    .tabs .tab-indicator {
+        display: none;
+    }
+
+    div > h5 {
+        font-size: 0.58rem;
+    }
+
+    .tabs .tab-header > div {
+        height: 50px;
+        cursor: pointer;
+        margin: 0 20px;
+    }
+
+    .project-1,
+    .project-2,
+    .project-3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project-2 {
+        flex-direction: column-reverse;
+    }
+
+    .gh-repo {
+        flex-direction: column;
+    }
+
+    .repo {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .for-relative {
+        position: inherit;
+        margin: 0 auto;
+    }
+
+    .inner-aside {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .aside-icons {
+        flex-direction: row;
+    }
+
+    .aside-icons span {
+        margin: 20px;
+    }
+
+    .aside-icons:after {
+        display: none;
+    }
+
+}
+
+/*
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    /* CSS */
+
 }

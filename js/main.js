@@ -80,7 +80,6 @@ function play() {
 
 // jQuery -> SMOOTH
 window.scroll({
-  top: 2500,
   left: 0,
   behavior: 'smooth'
 });
@@ -110,3 +109,11 @@ function scrollToTop() {
 }
 scrollToTopBtn.addEventListener("click", scrollToTop)
 document.addEventListener("scroll", handleScroll);
+
+// HAMBURGER
+const hamburger = document.getElementById('hamburger');
+const navUl = document.getElementById('nav');
+
+hamburger.addEventListener('click', () => {
+  navUl.classList.toggle('show');
+});
