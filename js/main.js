@@ -113,7 +113,7 @@ document.addEventListener("scroll", handleScroll);
 // HAMBURGER
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector("#nav");
-const hidenav = document.querySelectorAll("#nav li span a:not([href='#'])");
+
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -122,9 +122,15 @@ function mobileMenu() {
     navMenu.classList.toggle("active");
 }
 
-for(var x=0; x<hidenav.length; x++){
-  hidenav[x].onclick = function(){
-    document.querySelector(".hamburger").click();
+
+
+document.addEventListener("DOMContentLoaded", function(){
+  const hidenav = document.querySelectorAll("#nav li span a:not([href='#'])");
+
+  for(var hid=0; hid<hidenav.length; hid++){
+    hidenav[hid].onclick = function(){
+      document.querySelector(".hamburger").click();
+    }
   }
-}
+});
 
