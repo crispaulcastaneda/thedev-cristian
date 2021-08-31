@@ -111,9 +111,20 @@ scrollToTopBtn.addEventListener("click", scrollToTop)
 document.addEventListener("scroll", handleScroll);
 
 // HAMBURGER
-const hamburger = document.getElementById('hamburger');
-const navUl = document.getElementById('nav');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("#nav");
+const hidenav = document.querySelectorAll("#nav li span a:not([href='#'])");
 
-hamburger.addEventListener('click', () => {
-  navUl.classList.toggle('show');
-});
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+for(var x=0; x<hidenav.length; x++){
+  hidenav[x].onclick = function(){
+    document.querySelector(".hamburger").click();
+  }
+}
+
