@@ -6,9 +6,7 @@
   var curScroll;
   var direction = 0;
   var prevDirection = 0;
-
   var header = document.getElementById('website-header');
-
   var checkScroll = function() {
 
     /*
@@ -111,26 +109,24 @@ scrollToTopBtn.addEventListener("click", scrollToTop)
 document.addEventListener("scroll", handleScroll);
 
 // HAMBURGER
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector("#nav");
+const menuBtn = document.querySelector(".hamburger");
+const menuLinks = document.querySelector("#nav");
+const oc = document.querySelectorAll(".oc");
 
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
-
-
-
-document.addEventListener("DOMContentLoaded", function(){
-  const hidenav = document.querySelectorAll("#nav li span a:not([href='#'])");
-
-  for(var hid=0; hid<hidenav.length; hid++){
-    hidenav[hid].onclick = function(){
-      document.querySelector(".hamburger").click();
-    }
-  }
+// main toggle
+menuBtn.addEventListener("click", () => {
+  toggle();
 });
 
+oc.forEach((item) => {
+  item.addEventListener("click", () => {
+    if( menuBtn.classList.contains("open")){
+      toggle();
+    }
+  });
+});
+
+function toggle() {
+  menuBtn.classList.toggle("open");
+  menuLinks.classList.toggle("open");
+}
