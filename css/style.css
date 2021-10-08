@@ -310,6 +310,7 @@ li a:hover {
     margin: 0 auto;
 }
 
+.project-new-001,
 .project-1,
 .project-2,
 .project-3 {
@@ -318,11 +319,11 @@ li a:hover {
     padding: 10px;
 }
 
-.project-1 a, .project-2 a, .project-3 a {
+.project-new-001 a, .project-1 a, .project-2 a, .project-3 a {
     width: 100%;
 }
 
-.project-1 img, .project-2 img, .project-3 img {
+.project-new-001 img, .project-1 img, .project-2 img, .project-3 img {
     width: 100%;
     filter: invert(30%);
     transition: all .1s ease-in-out;
@@ -347,7 +348,7 @@ li a:hover {
 }
 
 .source-tools i.bx {
-    font-size: 2rem;
+    font-size: 1.2rem;
     position: relative;
     top: 0;
     transition: top ease 0.5s;
@@ -357,6 +358,7 @@ li a:hover {
     top: -10px;
 }
 
+.project-new-001 img:hover,
 .project-1 img:hover,
 .project-2 img:hover,
 .project-3 img:hover {
@@ -735,6 +737,7 @@ li a:hover {
         font-size: .9rem;
     }
 
+    .project-new-001,
     .project-1,
     .project-2,
     .project-3 {
@@ -742,6 +745,7 @@ li a:hover {
         flex-wrap: wrap;
     }
 
+    .project-new-001,
     .project-2 {
         flex-direction: column-reverse;
     }
@@ -997,6 +1001,7 @@ li a:hover {
         flex-wrap: wrap;
     }
 
+    .project-new-001,
     .project-2 {
         flex-direction: column-reverse;
     }
@@ -1269,6 +1274,7 @@ li a:hover {
         flex-wrap: wrap;
     }
 
+    .project-new-001,
     .project-2 {
         flex-direction: column-reverse;
     }
