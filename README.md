@@ -2,9 +2,9 @@
 Personal project with github API
 
 ## Markups and Technology
-![JavaScript](https://img.icons8.com/color/30/javascript.png)
-![HTML](https://img.icons8.com/color/30/html-filetype.png)
-![CSS](https://img.icons8.com/color/30/css-filetype.png)
+![HTML](https://cdn-icons-png.flaticon.com/32/174/174854.png)
+![CSS](https://cdn-icons-png.flaticon.com/32/732/732190.png)
+![JavaScript](https://cdn-icons-png.flaticon.com/32/919/919828.png)
 
 ## License and Copyright
 
